@@ -1,7 +1,5 @@
-ssfrom flask import Flask, jsonify, request
-
+from flask import Flask, jsonify, request
 app = Flask(__name__)
-
 tasks = [
     {
         'id': 1,
