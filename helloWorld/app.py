@@ -1,7 +1,8 @@
 """
-This is testing the flask123 by space
+This is testing the flask123 by adding space
 """
-from flask import Flask, jsonify, request
+
+from flask import Flask, jsonify, request 
 
 APP = Flask(__name__)
 TASKS = [
@@ -18,6 +19,11 @@ TASKS = [
         'done': False
     }
 ]
+
+
+@APP.route('/')
+def hello_world():
+    return 'Hello World!!! Changed it up a bit!'
 
 
 @APP.route('/tasks', methods=['GET'])
