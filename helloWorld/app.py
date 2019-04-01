@@ -20,6 +20,11 @@ TASKS = [
 ]
 
 
+@APP.route('/')
+def hello_world():
+    return 'Hello World!!! Changed it up a bit!'
+
+
 @APP.route('/tasks', methods=['GET'])
 def get_tasks():
     """
